@@ -113,5 +113,22 @@
 				});
 
 			});
-
+			function sendEmail(event) {
+				event.preventDefault(); // Prevent the form from submitting traditionally
+			
+				// Get the form data
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var message = document.getElementById('message').value;
+			
+				// Send the email using EmailJS
+				emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', event.target, 'YOUR_PUBLIC_KEY')
+					.then(function() {
+						alert('Message sent successfully!');
+						// Reset the form after successful submission
+						event.target.reset();
+					}, function(error) {
+						alert('Error sending message: ' + error);
+					});
+			}
 })(jQuery);
