@@ -34,24 +34,51 @@
             <p>For this project, I used RedCap to design surveys to collect data on key process metrics from stakeholders over time. RedCap allowed me to efficiently create electronic surveys, distribute them, and collect numeric responses directly into a database. The surveys gathered data on variables like processing times, defect rates, customer satisfaction levels, etc.</p> 
             <p>I then transferred the raw survey response data from RedCap into statistical software programs SPSS and for analysis. In this program, I performed statistical process control analysis using various control charts (such as p, np, c, u charts) to examine whether the processes were in statistical control or if there were assignable causes of variation impacting process performance.</p> 
             <p>The results of the control charting revealed which processes were stable over time and which were experiencing issues needing improvement. I presented my analysis back to the clients, identifying processes that were out of control. I also recommended data-driven actions that could be taken to address any unstable processes and drive improvement.</p> 
-            <p>This project demonstrated how I leveraged data collection tools, statistical software, and process control methods to study operational processes using survey data. It provided insight into process performance and opportunities for enhancement based on rigorous statistical analysis.<br><a href="c-charts.docx">Process Control Report</a><br><a href="spss-output-file.spv">SPSS Output file for Process Control Charts</a></p>
+            <p>This project demonstrated how I leveraged data collection tools, statistical software, and process control methods to study operational processes using survey data. It provided insight into process performance and opportunities for enhancement based on rigorous statistical analysis.<br><a href="files/c-charts.docx">Process Control Report</a><br><a href="files/spss-output-file.spv">SPSS Output file for Process Control Charts</a></p>
             <h3>Covenant Hospital Customer Traffic Analysis</h3> 
             <p>For this project, I analyzed customer traffic data collected over 10 weeks from Covenant Hospital and its 3 outlying clinics. The data included hourly customer arrival counts. Using Excel, I created graphs to illustrate daily and hourly traffic patterns.</p> 
             <p>A daily graph revealed that Fridays had significantly higher average traffic than other weekdays. An hourly graph showed peaks in arrivals from 11am-1pm and late afternoon. These established useful insights into how resources could be optimized.</p> 
             <p>I also constructed a control chart in Excel to review the stability of weekly traffic over time. The control chart showed the process was in a state of statistical control. However, it highlighted the need for ongoing monitoring in case external factors impact arrivals in the future.</p> 
-            <p>My analysis report and recommendations to hospital management focused on strategically aligning staffing, scheduling, and communications based on the demand patterns. This included staffing up on Fridays/certain hours and spreading out appointments. The project demonstrated how statistical process control can be applied to service systems to improve operations.<br><a href="covenant.docx">Management Report</a><br><a href="covenant.xlsx">Excel Analysis File</a></p>
+            <p>My analysis report and recommendations to hospital management focused on strategically aligning staffing, scheduling, and communications based on the demand patterns. This included staffing up on Fridays/certain hours and spreading out appointments. The project demonstrated how statistical process control can be applied to service systems to improve operations.<br><a href="files/covenant.docx">Management Report</a><br><a href="files/covenant.xlsx">Excel Analysis File</a></p>
 
-
-            
-            
-            
-            
-            
 
                 <ul class="actions">
                     <li><a href="index.html" class="button">Back to Homepage</a></li>
                 </ul>
       </section>
+      <div id="scroll-arrows">
+        <div id="scroll-top" onclick="scrollToTop()">&#8679;</div>
+        <div id="scroll-bottom" onclick="scrollToBottom()">&#8681;</div>
+        </div>
+        <style>
+        #scroll-arrows {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#scroll-top, #scroll-bottom {
+cursor: pointer;
+font-size: 24px;
+padding: 5px;
+background-color: #ccc;
+border-radius: 50%;
+margin: 5px;
+}
+        </style>
+        
+        <script>
+          function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+}
+        </script>
 </body>
 </html>
 

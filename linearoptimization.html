@@ -35,12 +35,12 @@
             <h3>NasaMist Production Model for Minimum Production Cost</h3> 
             <p>For this project, I developed a linear optimization model to determine the minimum cost production quantities for chemicals used to produce 1000 pounds of the pharmaceutical drug NasaMist. The model ensured production adhered to ingredient percentage composition constraints. The optimal solution indicated producing using 460 pounds of chemical 2, 459 pounds of chemical 3, and 90 pounds of chemical 4, at a minimum cost of $10,810. Sensitivity analysis was then conducted by varying the percentage of one active ingredient to observe cost variations and determine a recommended production range.</p> 
             <h3>Optimal Radiation Effect</h3> 
-            <p>In this project, I created a linear optimization model to identify the optimal combination of radiation beams to maximize radiation delivered to brain tumor tissue while minimizing exposure to healthy tissue. The model determined beam intensities and orientations to deliver 228 units of radiation to tumors within normal tissue constraints of 60 units. This ensured patients receive the most effective treatment while protecting healthy areas.<br><a href="mngtreport1.docx">Management Report for the 2 Cases and Embedded Excel Files</a></p> 
+            <p>In this project, I created a linear optimization model to identify the optimal combination of radiation beams to maximize radiation delivered to brain tumor tissue while minimizing exposure to healthy tissue. The model determined beam intensities and orientations to deliver 228 units of radiation to tumors within normal tissue constraints of 60 units. This ensured patients receive the most effective treatment while protecting healthy areas.<br><a href="files/mngtreport1.docx">Management Report for the 2 Cases and Embedded Excel Files</a></p> 
             
             <h2>Optimization of Acquisition Strategy and Sensitivity Analyses</h2> 
             <p>For this project, I performed two case studies: <br>
                 1) A linear optimization of procurement quantities from 3 suppliers to minimally meet valve requirements, resulting in a purchase cost of $16,500. <br>
-                2) A production optimization determining minimum cost manufacturing locations for two drugs within machine time constraints, with a total cost of $1,300. Both cases included sensitivity analyses on requirements/times and costs.<br><a href="mngtreport2.docx">Respective Management Reports and Embedded Excel Files</a></p> 
+                2) A production optimization determining minimum cost manufacturing locations for two drugs within machine time constraints, with a total cost of $1,300. Both cases included sensitivity analyses on requirements/times and costs.<br><a href="files/mngtreport2.docx">Respective Management Reports and Embedded Excel Files</a></p> 
             
             
             
@@ -51,6 +51,39 @@
                     <li><a href="index.html" class="button">Back to Homepage</a></li>
                 </ul>
       </section>
+      <div id="scroll-arrows">
+        <div id="scroll-top" onclick="scrollToTop()">&#8679;</div>
+        <div id="scroll-bottom" onclick="scrollToBottom()">&#8681;</div>
+        </div>
+        <style>
+        #scroll-arrows {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#scroll-top, #scroll-bottom {
+cursor: pointer;
+font-size: 24px;
+padding: 5px;
+background-color: #ccc;
+border-radius: 50%;
+margin: 5px;
+}
+        </style>
+        
+        <script>
+          function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+}
+        </script>
 </body>
 </html>
 

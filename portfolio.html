@@ -48,12 +48,12 @@
 				<ol>
 					<li>
 						<h4>Develop a codebook</h4>
-						<p>A codebook was created to assign codes and variable names to each survey item. The codebook also included the response options and their corresponding values. <br><a href="codebook.docx">Codebook</a></p>
+						<p>A codebook was created to assign codes and variable names to each survey item. The codebook also included the response options and their corresponding values. <br><a href="files/codebook.docx">Codebook</a></p>
 						
 					</li>
 					<li>
 						<h4>Data file creation and data entry</h4>
-						<p>A new data file was created in SPSS, and variables were defined based on the codebook. The survey data was then entered into the corresponding columns in the SPSS data file. <br><a href="dataset.sav">Dataset</a></p>
+						<p>A new data file was created in SPSS, and variables were defined based on the codebook. The survey data was then entered into the corresponding columns in the SPSS data file. <br><a href="files/dataset.sav">Dataset</a></p>
 					</li>
 					<li>
 						<h4>Data cleaning</h4>
@@ -61,17 +61,17 @@
 					</li>
 					<li>
 						<h4>Analysis and Write-up</h4>
-						<p>Descriptive statistics (means, standard deviations) were calculated for demographic variables and presented in a "Sample Description" table. Means, standard deviations, and correlations were calculated for the engagement variables and reported in a summary table. Relevant paragraphs were written to interpret and discuss the findings. <br><a href="SPSSOutput.spv">SPSS Analysis Output</a><br><a href="QuanWriteup.docx">Write-up for Quantitative Analysis </a> </p>
+						<p>Descriptive statistics (means, standard deviations) were calculated for demographic variables and presented in a "Sample Description" table. Means, standard deviations, and correlations were calculated for the engagement variables and reported in a summary table. Relevant paragraphs were written to interpret and discuss the findings. <br><a href="files/SPSSOutput.spv">SPSS Analysis Output</a><br><a href="files/QuanWriteup.docx">Write-up for Quantitative Analysis </a> </p>
 					</li>
 				</ol>
 				
 				<h3>Qualitative Analysis</h3>
-				<p>Using Dedoose, the interview transcripts were coded and analyzed for emerging themes. Several key themes were identified, including the importance of building trust and relationships with community members, the challenges of reaching and engaging diverse populations, and the need for dedicated resources and staff training to support community engagement efforts effectively.<br><a href="DedooseChartExport.xlsx">Dedoose Chart Export</a></p>
+				<p>Using Dedoose, the interview transcripts were coded and analyzed for emerging themes. Several key themes were identified, including the importance of building trust and relationships with community members, the challenges of reaching and engaging diverse populations, and the need for dedicated resources and staff training to support community engagement efforts effectively.<br><a href="files/DedooseChartExport.xlsx">Dedoose Chart Export</a></p>
 			</section>
 			
 			<section>
 				<h2>Integration and Findings</h2>
-				<p>The quantitative and qualitative findings were integrated to answer the mixed methods research questions. The survey results provided an overview of the frequency and patterns of community engagement practices among libraries, while the interview data offered deeper insights into the motivations, challenges, and strategies employed by librarians in their engagement efforts.<br><a href="mixed-method writeup.docx">Mixed-Methods Write-up</a></p>
+				<p>The quantitative and qualitative findings were integrated to answer the mixed methods research questions. The survey results provided an overview of the frequency and patterns of community engagement practices among libraries, while the interview data offered deeper insights into the motivations, challenges, and strategies employed by librarians in their engagement efforts.<br><a href="files/mixed-method writeup.docx">Mixed-Methods Write-up</a></p>
 				
 			</section>
 			
@@ -93,7 +93,39 @@
                 <li><a href="index.html" class="button">Back to Homepage</a></li>
             </ul>
 			</section>
-
+			<div id="scroll-arrows">
+				<div id="scroll-top" onclick="scrollToTop()">&#8679;</div>
+				<div id="scroll-bottom" onclick="scrollToBottom()">&#8681;</div>
+				</div>
+				<style>
+				#scroll-arrows {
+	  position: fixed;
+	  bottom: 20px;
+	  right: 20px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  }
+	  
+	  #scroll-top, #scroll-bottom {
+	  cursor: pointer;
+	  font-size: 24px;
+	  padding: 5px;
+	  background-color: #ccc;
+	  border-radius: 50%;
+	  margin: 5px;
+	  }
+				</style>
+				
+				<script>
+				  function scrollToTop() {
+	  window.scrollTo({ top: 0, behavior: 'smooth' });
+	  }
+	  
+	  function scrollToBottom() {
+	  window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+	  }
+				</script>
 
 </body>
 </html>

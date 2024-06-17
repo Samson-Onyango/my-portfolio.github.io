@@ -46,10 +46,10 @@
                 <section>
                     <h2>Case Studies</h2>
                     <h3>Case 1: Revenue Modeling for a Professional Football Team</h3>
-                    <p>I developed a spreadsheet model to analyze the ticket sales revenue distribution for a professional football team's home venue, Arrowhead Stadium. By simulating the demand for different seating zones based on normal distributions, the model provided a reliable estimate of the total revenue, enabling effective budgeting and decision-making. <br><a href="montecarlo.xlsx">Monte Carlo Simulation Model</a></p>
+                    <p>I developed a spreadsheet model to analyze the ticket sales revenue distribution for a professional football team's home venue, Arrowhead Stadium. By simulating the demand for different seating zones based on normal distributions, the model provided a reliable estimate of the total revenue, enabling effective budgeting and decision-making. <br><a href="files/montecarlo.xlsx">Monte Carlo Simulation Model</a></p>
         
                     <h3>Case 2: Credit Card Profitability Analysis for J&G Bank</h3>
-                    <p>For J&G Bank, I created a Monte Carlo Simulation model to evaluate the profitability of their credit card product. By incorporating various factors such as application volumes, approval rates, charges, fees, and maintenance costs, the model accurately predicted the probability of profitability under different scenarios, allowing the bank to make informed decisions regarding their credit card operations.<br><a href="montecarlo.xlsx">Monte Carlo Simulation Model</a></p>
+                    <p>For J&G Bank, I created a Monte Carlo Simulation model to evaluate the profitability of their credit card product. By incorporating various factors such as application volumes, approval rates, charges, fees, and maintenance costs, the model accurately predicted the probability of profitability under different scenarios, allowing the bank to make informed decisions regarding their credit card operations.<br><a href="files/montecarlo.xlsx">Monte Carlo Simulation Model</a></p>
                 </section>
         
                 <section>
@@ -66,6 +66,39 @@
                     <li><a href="index.html" class="button">Back to Homepage</a></li>
                 </ul>
       </section>
+      <div id="scroll-arrows">
+        <div id="scroll-top" onclick="scrollToTop()">&#8679;</div>
+        <div id="scroll-bottom" onclick="scrollToBottom()">&#8681;</div>
+        </div>
+        <style>
+        #scroll-arrows {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#scroll-top, #scroll-bottom {
+cursor: pointer;
+font-size: 24px;
+padding: 5px;
+background-color: #ccc;
+border-radius: 50%;
+margin: 5px;
+}
+        </style>
+        
+        <script>
+          function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+}
+        </script>
 </body>
 </html>
 

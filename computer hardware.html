@@ -49,6 +49,39 @@
                     <li><a href="index.html" class="button">Back to Homepage</a></li>
                 </ul>
       </section>
+      <div id="scroll-arrows">
+        <div id="scroll-top" onclick="scrollToTop()">&#8679;</div>
+        <div id="scroll-bottom" onclick="scrollToBottom()">&#8681;</div>
+        </div>
+        <style>
+        #scroll-arrows {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#scroll-top, #scroll-bottom {
+cursor: pointer;
+font-size: 24px;
+padding: 5px;
+background-color: #ccc;
+border-radius: 50%;
+margin: 5px;
+}
+        </style>
+        
+        <script>
+          function scrollToTop() {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToBottom() {
+window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+}
+        </script>
 </body>
 </html>
 
